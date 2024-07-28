@@ -1,2 +1,2 @@
-# MLOPS_Assignment1
+# MLOPS_Assignment
 To Learn about deployment of MLOPS
