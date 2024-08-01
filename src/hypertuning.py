@@ -42,7 +42,7 @@ best_rf_model = grid_search.best_estimator_
 y_pred = best_rf_model.predict(X_val)
 
 # Evaluate the model
-#Evaluate the model test 
+#Evaluate the model test 1
 accuracy = accuracy_score(y_val, y_pred)
 print(f"Validation set accuracy: {accuracy:.2f}")
 
