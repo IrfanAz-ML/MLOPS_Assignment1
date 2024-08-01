@@ -3,10 +3,10 @@ name: CI/CD Pipeline
 on:
   push:
     branches:
-      - main
+      - myLocalBranch
   pull_request:
     branches:
-      - main
+      - myLocalBranch
 
 jobs:
   build:
@@ -40,6 +40,6 @@ jobs:
       if: github.ref == 'refs/heads/main'
       run: |
         docker build -t my-ml-app .
-        docker tag my-ml-app:latest mydockerhubusername/my-ml-app:latest
+        docker tag my-ml-app:latest IrfanAzAi/my-ml-app:latest
         echo ${{ secrets.DOCKER_PASSWORD }} | docker login -u ${{ secrets.DOCKER_USERNAME }} --password-stdin
         docker push mydockerhubusername/my-ml-app:latest
