@@ -61,4 +61,3 @@ print(f"Validation set accuracy: {accuracy:.2f}")
 
 # Save the best model
 joblib.dump(grid_search.best_estimator_, 'best_model.joblib')
-
